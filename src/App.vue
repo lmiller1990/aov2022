@@ -14,7 +14,7 @@ const generateList = () => (secretSantaList.value = matchPeople(store.list))
 </script>
 
 <template>
-  <div class="w-full h-full flex p-12 items-center flex-col">
+  <div class="w-full h-full flex pb-48 items-center flex-col">
     <div class="flex flex-col items-center">
       <h1 class="text-3xl text-green font-bold">Secret Santa List Generator</h1>
       <div v-if="!secretSantaList.length">
@@ -23,14 +23,11 @@ const generateList = () => (secretSantaList.value = matchPeople(store.list))
           each other will be created.
         </p>
         <ParticipantForm />
-        <div>
-          <List class="mt-12" />
-          <button
-            class="w-full bg-green text-white text-4xl font-bold rounded-md px-12 py-4 my-2"
-            @click="generateList"
-          >
+        <div class="mt-12 text-center">
+          <button class="bg-green text-white text-2xl font-bold rounded-md px-12 py-4 my-2" @click="generateList">
             Generate list 🎁
           </button>
+          <List />
         </div>
       </div>
       <div v-else>
