@@ -1,19 +1,42 @@
-<script setup>
-import { ref, watch } from 'vue'
+<script setup lang="ts">
+import { ref } from 'vue'
 
-const searchTerm = ref('')
+interface Joke {
+  setup: string
+  delivery: string
+}
 
-const findProducts = async term => {}
+const joke = ref<Joke>()
+const showDelivery = ref(false)
 
-watch(searchTerm, newTerm => findProducts(newTerm))
+async function fetchJoke() {
+  const json = await window.fetch('https://v2.jokeapi.dev/joke/christmas')
+  const res = await json.json()
+  return res as Joke
+}
+
+async function getJoke() {
+  showDelivery.value = false
+  const res = await fetchJoke()
+  joke.value = res
+}
+
+function handleShowDelivery() {
+  showDelivery.value = true
+}
+
+getJoke()
 </script>
 
 <template>
-  <div class="w-full h-full flex flex-col gap-5 justify-center items-center">
-    <h1 class="text-4xl font-bold">Gift Search Bar</h1>
-    <input type="text" class="p-2 border-2 border-gray-dark" v-model="searchTerm" placeholder="Start typing..." />
-    <ul class="list-disc">
-      <li>Display suggestions here</li>
-    </ul>
+  <div class="w-full h-full flex justify-center items-center">
+    <div v-if="joke">
+      <div>{{ joke.setup }}</div>
+      <template v-if="showDelivery">
+        <div >{{ joke.delivery }}</div>
+        <button @click="getJoke">{{ 'Another' }}</button>
+      </template>
+      <button v-else="showDelivery" @click="handleShowDelivery">{{ 'Tell Me!' }}</button>
+    </div>
   </div>
 </template>
