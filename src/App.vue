@@ -1,9 +1,9 @@
 <script setup lang="ts">
-// fetch('https://v2.jokeapi.dev/joke/christmas') 
+import ChristmasTree from './ChristmasTree.vue'
 </script>
 
 <template>
   <div class="w-full h-full flex justify-center items-center">
-    <div>Good luck!</div>
+    <ChristmasTree :size="7" />
   </div>
 </template>
