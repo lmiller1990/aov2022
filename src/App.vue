@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import ItemSelect from './ItemSelect.vue'
-import ComparisonSummary from './ComparisonSummary.vue'
 </script>
 
 <template>
