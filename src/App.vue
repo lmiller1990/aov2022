@@ -9,8 +9,8 @@ const { itemA, itemB, items, message } = useItemComparison()
   <div class="w-full h-full flex flex-col gap-5 justify-center items-center">
     <h1 class="text-4xl font-bold">Select items to compare</h1>
     <div class="flex flex-col gap-5 justify-center">
-      <ItemSelect v-model="itemA" :items="items" />
-      <ItemSelect v-model="itemB" :items="items" />
+      <ItemSelect v-model="itemA" :items="items" data-cy="select-1" />
+      <ItemSelect v-model="itemB" :items="items" data-cy="select-2" />
     </div>
     {{ message }}
   </div>
