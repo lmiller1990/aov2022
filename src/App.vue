@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useItemComparison } from './itemComparison';
+import { useItemComparison } from './itemComparison'
 import ItemSelect from './ItemSelect.vue'
 
 const { itemA, itemB, items, message } = useItemComparison()
@@ -12,6 +12,8 @@ const { itemA, itemB, items, message } = useItemComparison()
       <ItemSelect v-model="itemA" :items="items" data-cy="select-1" />
       <ItemSelect v-model="itemB" :items="items" data-cy="select-2" />
     </div>
-    {{ message }}
+    <div data-cy="message">
+      {{ message }}
+    </div>
   </div>
 </template>
