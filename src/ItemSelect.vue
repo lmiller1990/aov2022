@@ -17,7 +17,6 @@ function handleChange(event: Event) {
 </script>
 
 <template>
-  {{ props.modelValue}}
   <select @change="handleChange" class="p-2 border-2 border-gray-dark">
     <option selected disabled value="">Select an item</option>
     <option 
