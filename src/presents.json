@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "src": "/assets/present1.svg",
+    "dimensions": {
+      "width": 60,
+      "height": 60
+    }
+  },
+  {
+    "id": 2,
+    "src": "/assets/present2.svg",
+    "dimensions": {
+      "width": 40,
+      "height": 40
+    }
+  },
+  {
+    "id": 3,
+    "src": "/assets/present3.svg",
+    "dimensions": {
+      "width": 70,
+      "height": 60
+    }
+  },
+  {
+    "id": 4,
+    "src": "/assets/present4.svg",
+    "dimensions": {
+      "width": 110,
+      "height": 90
+    }
+  },
+  {
+    "id": 5,
+    "src": "/assets/present5.svg",
+    "dimensions": {
+      "width": 90,
+      "height": 70
+    }
+  }
+]

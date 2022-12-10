@@ -6,29 +6,23 @@
 
 ## Problem description
 
-You're tasked with building a debounced search bar for products from [DummyJSON's product API](https://dummyjson.com/docs/products#search). In case you're not familiar with the concept of _debouncing_, it's a technique that allows one to delay a function's execution until a specific amount of time has elapsed since the last call.
+Fortunately, we got lucky this year and were gifted a lot of presents! But look at this chaos... Wouldn't it be nice if we could sort all of our presents by their dimensions?
 
-For this challenge, you'll need to add a 300-millisecond delay to the `findProducts` function. You can make use of readily available debounce implementations, or try writing one yourself.
+- We want to sort the presents by their surface area (width \* height, small to big).
+- Add a button with the name `Toggle sort` that makes it possible to toggle sorting.
+- Hint: use `computed()` for best results.
+- Hint: you can run the tests with `npm run test` to see if your solution matches the specification.
 
-You'll also need to display a generic loading spinner/message, and if the function executes successfully, place suggested products' names and price tags inside an unordered list. Otherwise, use native `alert()` to show a generic error message.
+## Example of a solution in action
 
-If the search term gets reset back to an empty string, clear the search suggestions too.
-
-## Recording of an example solution
-
-https://youtu.be/avf8OyNDJfo
+https://aov-sort-presents.netlify.app/
 
 ## Author
 
-Maciej Pędzich (Mac):
+This challenge was created by [Markus Oberlehner](https://twitter.com/MaOberlehner).
 
-- [GitHub](https://github.com/maciejpedzich)
-- [Twitter](https://twitter.com/MaciejPedzich)
-- [Mastodon](https://notacult.social/@maciejpedzich)
-- [My website (coming next year)](https://maciejpedzi.ch)
+If you like how, in this example, you can check your implementation with an existing test, you might be interested in my [book/newsletter about how to write good tests for Vue applications](https://goodvuetests.com/).
 
 ## Credits
-
-[DummyJSON project](https://github.com/Ovi/DummyJSON) by Muhammad Ovi.
 
 Based on [a Stackblitz project by tony19](https://stackblitz.com/edit/vue3-vite-starter)
