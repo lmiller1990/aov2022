@@ -1,3 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*
+  You can use Tailwind-style classes and @apply notation, but they're coming from UnoCSS
+  The syntax is mostly identical, but you get full icon support via CSS.
+*/
