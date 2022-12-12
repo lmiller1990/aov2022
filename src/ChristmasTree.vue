@@ -11,7 +11,7 @@ const props = withDefaults(
 )
 
 const Ball: FunctionalComponent = props => {
-  return <div class="relative rounded-full bg-green w-16 h-16 -m-2 flex justify-center items-center" />
+  return <div class="relative rounded-full bg-green-600 w-16 h-16 -m-2 flex justify-center items-center" />
 }
 </script>
 
