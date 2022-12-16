@@ -28,7 +28,7 @@ For hints, you can refer to the [Vue docs](https://vuejs.org/guide/reusability/c
 
 ## Example of a solution in action
 
-To see a working demo check out: https://stackblitz.com/edit/drag-and-drop-presents
+To see a working demo check out: https://stackblitz.com/edit/custom-christmas-directive?file=README.md
 
 ## Author
 
