@@ -24,9 +24,13 @@ Your tasks are:
 
 I highly recommend checking out the solution to get an idea of what this might look like.
 
-For hints, you can refer to the [Vue docs](https://vuejs.org/guide/reusability/custom-directives.html#directive-hooks) on this topic.
+For hints, you can refer to the [Vue docs](https://vuejs.org/g![Dec-16-2022 09-41-15]
+uide/reusability/custom-directives.html#directive-hooks) on this topic.
 
 ## Example of a solution in action
+
+![Dec-16-2022 09-41-15](https://user-images.githubusercontent.com/18535681/208122713-eda72c40-4b31-443d-9faa-6cd10bbdf4e1.gif)
+
 
 To see a working demo check out: https://stackblitz.com/edit/custom-christmas-directive?file=README.md
 
