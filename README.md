@@ -24,8 +24,7 @@ Your tasks are:
 
 I highly recommend checking out the solution to get an idea of what this might look like.
 
-For hints, you can refer to the [Vue docs](https://vuejs.org/g![Dec-16-2022 09-41-15]
-uide/reusability/custom-directives.html#directive-hooks) on this topic.
+For hints, you can refer to the [Vue docs](https://vuejs.org/guide/reusability/custom-directives.html#directive-hooks) on this topic.
 
 ## Example of a solution in action
 
