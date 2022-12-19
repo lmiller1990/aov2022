@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getDistanceKm, getDistanceMiles } from '@/utils/distance'
+import { getDistanceKm, getDistanceMiles } from '../utils/distance'
 import { useGeolocation } from '@vueuse/core'
 import { ref, computed } from 'vue'
 
