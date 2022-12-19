@@ -2,7 +2,17 @@
 
 // source: https://stackoverflow.com/questions/27928/calculate-distance-between-two-latitude-longitude-points-haversine-formula
 
-export function getDistanceKm(lat: number, lon: number) {
+export type Unit = 'km' | 'mile'
+
+export function getDistance(lat: number, lon: number, unit: Unit) {
+  if (unit === 'km') {
+    return getDistanceKm(lat, lon)
+  }
+
+  return getDistanceMiles(lat, lon)
+}
+
+function getDistanceKm(lat: number, lon: number) {
   var R = 6371 // Radius of the earth in km
   var dLat = deg2rad(90 - lat) // deg2rad below
   var dLon = deg2rad(135 - lon)
@@ -14,10 +24,10 @@ export function getDistanceKm(lat: number, lon: number) {
   return Math.round(d)
 }
 
-export function getDistanceMiles(lat: number, lon: number) {
+function getDistanceMiles(lat: number, lon: number) {
   return Math.round(getDistanceKm(lat, lon) * 0.621371)
 }
 
-export function deg2rad(deg: number) {
+function deg2rad(deg: number) {
   return deg * (Math.PI / 180)
 }
